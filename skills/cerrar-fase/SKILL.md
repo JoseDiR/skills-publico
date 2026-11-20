@@ -11,7 +11,7 @@ Al acabar cada fase, commit, PR y merge van **solos y sin preguntar**, y se sigu
 ## Pasos (seguidos, sin preguntar)
 
 1. **Estado real.** `git status --short`, rama actual y `git rev-list --left-right --count HEAD...origin/main`.
-   Si la rama local tiene commits sin subir (p. ej. ingestas del motor en `main`), van en el mismo PR.
+   Si la rama local tiene commits sin subir, van en el mismo PR.
 2. **Rama.** Si estás en `main` (o la rama base), crea una rama con nombre de la fase.
 3. **Commit.** `git add -A` y saca del índice lo que no se versiona: `*.tmp`, `*.lock`, scripts de prueba
    sueltos (`test_*.js` en la raíz), logs, `.env` y cualquier archivo con claves, tokens o cookies (míralo
